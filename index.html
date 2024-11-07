@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Control</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>LED CONTROL</h1>
+        <div class="led-grid">
+            <!-- LED controls as in your original code -->
+            <div class="led-control" id="dapur-control">
+                <img id="dapur-led-icon" src="led-off.png" alt="LED Off" class="led-icon">
+                <p>DAPUR</p>
+                <button id="dapur-button" class="btn-blue">TURN ON</button>
+            </div>
+            <div class="led-control" id="ruang-tamu-control">
+                <img id="ruang-tamu-led-icon" src="led-off.png" alt="LED Off" class="led-icon">
+                <p>RUANG TAMU</p>
+                <button id="ruang-tamu-button" class="btn-blue">TURN ON</button>
+            </div>
+            <div class="led-control" id="ruang-makan-control">
+                <img id="ruang-makan-led-icon" src="led-off.png" alt="LED Off" class="led-icon">
+                <p>RUANG MAKAN</p>
+                <button id="ruang-makan-button" class="btn-blue">TURN ON</button>
+            </div>
+            <div class="led-control" id="toilet-control">
+                <img id="toilet-led-icon" src="led-off.png" alt="LED Off" class="led-icon">
+                <p>TOILET</p>
+                <button id="toilet-button" class="btn-blue">TURN ON</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Menu -->
+    <footer class="footer">
+        <a href="home.html" class="footer-icon">
+            <img src="home.png" alt="Home">
+        </a>
+        <a href="led.html" class="footer-icon">
+            <img src="led-light.png" alt="LED Control">
+        </a>
+        <a href="qr.html" class="footer-icon">
+            <img src="scanner.png" alt="QR Code">
+        </a>
+        <a href="settings.html" class="footer-icon">
+            <img src="settings.png" alt="Settings">
+        </a>
+    </footer>
+</body>
+</html>
